@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+{% block content %}
+<div class="image">
+<div class="row" id="contact">
+  <div class="container">
+    <a href="" target="_blank">
+      <center>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5VJ7-XrPT73ogms1O-60bgYzsyovKC3sPIoRTzx01oFio4dK" alt="" class="img-responsive img-thumbnail"></a>
+      </center>
+
+
+  </div>
+  </div>
+<center>
+<div class="container-fluid" >
+          <div class="Kontakt">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 id="green"><i class="	fas fa-user"></i>Sosei Nakagawa | Web Developer</h3>
+              <p id="green"><i class="fa fa-home"></i>福岡県　久留米市</p>
+              <p id="green"><i class="far fa-envelope"></i>naka33321@gmail.com</p>
+              <div class="icon">
+              <a href="https://twitter.com/naka33321?lang=ja" class="btn btn-default btn-sm .visible-xs-block .visible-sm-block" role="button" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100024308272308" class="btn btn-default btn-sm" role="button" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://github.com/nakagawa333/" class="btn btn-default btn-sm" role="button" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://nakagawa45.blogspot.com/" class="btn btn-default btn-sm" role="button" target="_blank"><i class="fab fa-blogger fa-2x"></i></a>
+
+          <a href="https://codepen.io/naka33321/" class="btn btn-default btn-sm" role="button" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
+          
+            </div>
+            </div>
+            </div>
+            </div>
+            
+</center>
+</div>
+</div>
+
+
+<center>
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="{{url_for('skil')}}" aria-label="前のページへ">
+        <span aria-hidden="true">«</span>
+      </a>
+    </li>
+    <li><a href="/">1</a></li>
+    <li><a href={{url_for('portfolio')}}>2</a></li>
+    <li><a href={{ url_for('skil')}}>3</a></li>
+    <li><a href={{url_for('contact')}}>4</a></li>
+    <li>
+      <a href="/" aria-label="次のページへ">
+        <span aria-hidden="true">»</span>
+      </a>
+    </li>
+    </ul>
+    </nav>
+    </center>
+<footer>
+  <div class="container">
+    <nav>
+      <ul class="footer-list">
+        <li><a href="https://lightyellowabandonedprinter--nakagawa333.repl.co/#about" id="footer-space"><i class="fas fa-address-card"></i>About</a></li>
+        <li><a href="https://lightyellowabandonedprinter--nakagawa333.repl.co/#service" id="footer-space"><i class="fas fa-laptop"></i>Service</a></li>
+        <li><a href="https://lightyellowabandonedprinter--nakagawa333.repl.co/#price" id="footer-space"><i class="fas fa-money-check-alt"></i>Price</a></li>
+        <li><a href="{{url_for('portfolio')}}" id="footer-space"><i class="fas fa-code"></i>Portfolio</a></li>
+        <li><a href="{{url_for('skil')}}" id="footer-space"><i class="fas fa-code"></i>Skils</a></li>
+        <li><a href="{{url_for('contact')}}" id="footer-space"><i class="far fa-address-book"></i>Contact</a></li>
+      </ul>
+      </nav>
+      <span>@2018 Sosei Nakagawa ALL rights reserved</span>
+  </div>
+</footer>
+
+</div>
+
+  
+  
+{% endblock %}
+
+{% block styles %}
+<style>
+  @media screen and (max-width:480px){
+    #contact{
+      padding-top:40%;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 1000px){
+    #contact{
+      padding-top:15%;
+    }
+  }
+  @media screen and (min-width: 1001px) and (max-width: 2000px){
+    #contact{
+      padding-top:7%;
+    }
+  }
+.image{
+  background: url(https://images.unsplash.com/photo-1505487985217-c1f95816212d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6491055a75d8ffa83dd072e10ac557a8&auto=format&fit=crop&w=1600&q=80);
+   background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+.icon{
+  padding-bottom:20px;
+}
+
+//フッター部分//
+
+
+ul{
+  list-style:none;
+}
+
+.footer-list{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style:none;
+  align-content:center;
+ }
+
+ .footer-list a{
+  margin:10px;
+  color:white;
+}
+
+.footer-list i{
+  color:white;
+}
+
+span{
+  display:flex;
+  justify-content: flex-end;
+  color:white;
+}
+
+footer{
+  background-color:#555555;
+}
+
+//ここまでフッター部分//
+
+
+//snsアイコン//
+
+
+
+.fa-twitter{
+  color: skyblue;
+}
+.fa-facebook{
+  color: blue;
+}
+.fa-github{
+  color:black;
+}
+.fa-blogger{
+  color: FF6E00;
+}
+
+//ここまでSNSアイコン//
+
+#green{
+  color:green;
+}
+
+
+</style>
+{% endblock %}

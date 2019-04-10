@@ -1,0 +1,69 @@
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+ <title>Sosei Nakagawa's portfilio</title>
+  <link rel="icon" type="image/jpg" href="https://image.freepik.com/free-icon/no-translate-detected_318-32173.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="personalPortfolioWebpage.css">
+  
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="/"><i class="fas fa-user-circle"></i>Sosei Nakagawa | Developer</a>
+          </div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-right">
+    <li> <a href="/#about"><span class="fas fa-address-card"></span>About</a></li>
+    <li><a href="/#service"><i class="fas fa-laptop"></i>Service</a></li>
+    <li><a href="/#price"><span class="	fas fa-money-check-alt"></span>Price</a></li>
+    <li><a href="{{url_for('portfolio')}}"><i class="fas fa-code"></i>Portfolio</a></li>
+    
+
+    
+  <lI><a href="https://lightyellowabandonedprinter--nakagawa333.repl.co/skil"><i class="	fas fa-code"></i>Skils</a></li>
+  <li><a href="{{url_for('contact')}}"><i class="far fa-address-book"></i>Contact</a></li>
+    </ul>
+</div>
+</nav>
+
+
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+{% block styles %} 
+<style>
+
+</style>
+{%endblock %}
+
+<style>
+ 
+</style>
